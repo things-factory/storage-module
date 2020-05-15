@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/storage-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node-red storage for things-factory",
   "main": "storage-module.js",
   "scripts": {
