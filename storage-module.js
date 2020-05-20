@@ -37,7 +37,7 @@ const thingsFactoryStorage = {
       const json = await response.json()
       const flow = json.flow
 
-      return flow
+      return flow || []
     } catch (e) {
       return []
     }
