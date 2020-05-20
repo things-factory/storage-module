@@ -28,7 +28,7 @@ const thingsFactoryStorage = {
     const { domain: myDomain } = user
 
     try {
-      const response = await fetch(`${serverUrl}/flows/${myDomain}`, {
+      const response = await fetch(`${serverUrl}/integration/flows/${myDomain}`, {
         headers: {
           authorization: this.accessToken
         }
@@ -47,7 +47,7 @@ const thingsFactoryStorage = {
     const { serverUrl, user } = this.settings.thingsFactory
     const { domain: myDomain } = user
 
-    const response = await fetch(`${serverUrl}/flows/${myDomain}`, {
+    const response = await fetch(`${serverUrl}/integration/flows/${myDomain}`, {
       method: 'POST',
       body: JSON.stringify({
         flows
